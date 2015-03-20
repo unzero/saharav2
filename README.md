@@ -3,5 +3,6 @@ Programa para el aprendizaje de la lengua japonesa
 
 Desarrollado en eclipse
 
-Desarrollado por: Ciro Iván García López \b
+Desarrollado por: Ciro Iván García López 
+
 Universidad Nacional de Colombia
