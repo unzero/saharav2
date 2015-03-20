@@ -1,8 +1,6 @@
 
 package core;
-import java.util.LinkedList;
 import java.awt.Font;
-import java.io.IOException;
 
 /**
  * 

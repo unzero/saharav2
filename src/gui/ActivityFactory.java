@@ -12,6 +12,9 @@ public class ActivityFactory {
 		if(type.equals("select-kanji")){
 			return new SelectKanji();
 		}
+		if(type.equals("visual-timer")){
+			return new VisualTimer(10,1);
+		}
 		return null;
 	}
 	

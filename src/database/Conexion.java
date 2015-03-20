@@ -37,7 +37,7 @@ public class Conexion {
     }
 
     private void open(String path) throws IOException{
-        LinkedList<String> rawData = new FileReader("./resources/"+path).getContent();
+        LinkedList<String> rawData = new FileReader("./bin/resources/"+path).getContent();
         for(String el : rawData){
             Kanji newKanji = new Kanji(el);
             kanji_list.add(newKanji);

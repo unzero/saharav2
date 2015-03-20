@@ -6,8 +6,10 @@ import java.io.FileInputStream;
 import java.io.InputStream;
 
 /**
+ * 
+ * Sahara - Programa para el aprendizaje de la lengua japonesa
+ * @author Ciro Iván Garcia López - Universidad Nacional de Colombia
  *
- * @author unzero
  */
 public class Fuente {
     

@@ -34,6 +34,14 @@ public class MainMenu extends JMenuBar{
 				}
 			}
 		});
+		study.addMenuComponent("Visual Timer", new MouseAdapter() {
+			@Override
+			public void mousePressed(MouseEvent e){
+				if( e.getButton() == 1){
+					MainWindow.getInstance().changeActivity("visual-timer");
+				}
+			}
+		});
 		
 		
 		this.add(file.getMenuList());
