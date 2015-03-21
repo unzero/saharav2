@@ -7,12 +7,15 @@ import java.awt.FlowLayout;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
+import core.Configuracion;
+
 public class MainWindow extends JFrame{
 	
 	private static MainWindow instance;
 	private JPanel centralPanel;
 	
 	private MainWindow(){
+		Configuracion.startup();
 		centralPanel = new JPanel(new FlowLayout());
 		this.add(centralPanel);
 		this.setSize(new Dimension(800,600));

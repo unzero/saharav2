@@ -36,13 +36,13 @@ public class VisualTimer extends Activity{
 				}
 				lambda += delta;
 				bar.setValue((int)getLambdaValue());
-				repaint();
 			}
 		}, 0, p*1000);
 		repaint();
 	}
 	
-	public double getLambdaValue(){
+	private double getLambdaValue(){
 		return (totalTime-lambda)/totalTime * 100;
 	}
+	
 }

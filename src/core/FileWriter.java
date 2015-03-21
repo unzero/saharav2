@@ -24,12 +24,12 @@ public class FileWriter {
     private void write(String path,LinkedList<String> data) throws IOException {
         BufferedWriter buf = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(path), "UTF-8"));
         for(String el : data){
-            buf.write(el);
+            buf.write(el+"\n");
         }
         buf.close();
     }
 
-    public void write_lectures() throws IOException {
+    private void write_lectures() throws IOException {
         /*BufferedWriter buf = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("./resources/all_lectures.dat"),"UTF-8"));
          for(int x=0;x<all_lectures.size();++x){
          buf.write(all_lectures.get(x)+"\n");
@@ -37,7 +37,7 @@ public class FileWriter {
          buf.close();*/
     }
 
-    public void write_p1p() throws IOException {
+    private void write_p1p() throws IOException {
         /*BufferedWriter buf = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("./resources/p1p.dat"),"UTF-8"));
          BufferedWriter buf1 = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("./resources/kj.dat"),"UTF-8"));
          for(int x=0;x<kanji_list.size();++x){

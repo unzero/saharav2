@@ -11,9 +11,10 @@ public class ActivityFactory {
 	public Activity getActivity(String type){
 		if(type.equals("select-kanji")){
 			return new SelectKanji();
-		}
-		if(type.equals("visual-timer")){
+		}else if(type.equals("visual-timer")){
 			return new VisualTimer(10,1);
+		}else if(type.equals("configuration")){
+			return new ConfigurationWindow();
 		}
 		return null;
 	}
